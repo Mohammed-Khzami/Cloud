@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Plateforme MQL</title>
+    <meta name="description" content="Le Master MQL est une véritable plateforme de formation et de production de la ressource
+    humaine très hautement qualifiée en ingénierie du logiciel. Le Master permet à l'étudiant d'une
+    part d'acquérir une compétence de pointe en haute technologie informatique et d'autre part une
+    très bonne maitrise de l'entreprise et de son écosystème avec une insertion facile, naturelle et
+    implicite dans les plus grandes SS2I du monde." />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/Chart.min.css" />
+
+    <!-- Scripts -->
+    <script src="js/utils.js" defer="defer"></script>
+    <script src="js/data/navbar-json.js" defer="defer"></script>
+    <script src="js/data/annonces-json.js" defer="defer"></script>
+    <script src="js/data/partenaires-json.js" defer="defer"></script>
+    <script src="js/data/promos-json.js" defer="defer"></script>
+    <script src="js/data/promos-details-json.js" defer="defer"></script>
+    <script src="js/data/professeurs-json.js" defer="defer"></script>
+    <script src="js/data/laureats-json.js" defer="defer"></script>
+    <script src="js/data/debouches-json.js" defer="defer"></script>
+    <script src="js/data/evenements-json.js" defer="defer"></script>
+    <script src="js/data/semestres-json.js" defer="defer"></script>
+    <script src="js/data/informations-json.js" defer="defer"></script>
+
+    <script src="js/models/laureat.js" defer="defer"></script>
+    <script src="js/models/annonce.js" defer="defer"></script>
+    <script src="js/models/navbar-item.js" defer="defer"></script>
+    <script src="js/models/partenaire.js" defer="defer"></script>
+    <script src="js/models/promo.js" defer="defer"></script>
+    <script src="js/models/promo-details.js" defer="defer"></script>
+    <script src="js/models/professeur.js" defer="defer"></script>
+    <script src="js/models/debouche.js" defer="defer"></script>
+    <script src="js/models/evenement.js" defer="defer"></script>
+    <script src="js/models/module.js" defer="defer"></script>
+    <script src="js/models/semestre.js" defer="defer"></script>
+    <script src="js/models/information.js" defer="defer"></script>
+    <script src="js/models/actualite.js" defer="defer"></script>
+
+    <script src="js/service/annonce-service.js" defer="defer"></script>
+    <script src="js/service/navbar-service.js" defer="defer"></script>
+    <script src="js/service/partenaire-service.js" defer="defer"></script>
+    <script src="js/service/professeur-service.js" defer="defer"></script>
+    <script src="js/service/stage-service.js" defer="defer"></script>
+    <script src="js/service/laureat-service.js" defer="defer"></script>
+    <script src="js/service/debouche-service.js" defer="defer"></script>
+    <script src="js/service/evenement-service.js" defer="defer"></script>
+    <script src="js/service/programme-service.js" defer="defer"></script>
+    <script src="js/service/information-service.js" defer="defer"></script>
+    <script src="js/service/actualite-service.js" defer="defer"></script>
+
+    <script src="js/views/root-component.js" defer="defer"></script>
+    <script src="js/views/annonce-component.js" defer="defer"></script>
+    <script src="js/views/laureat-component.js" defer="defer"></script>
+    <script src="js/views/quotes-components.js" defer="defer"></script>
+    <script src="js/views/partenaire-component.js" defer="defer"></script>
+    <script src="js/views/professeur-component.js" defer="defer"></script>
+    <script src="js/views/navbar-component.js" defer="defer"></script>
+    <script src="js/views/recherche-component.js" defer="defer"></script>
+    <script src="js/views/history-component.js" defer="defer"></script>
+    <script src="js/views/programme-component.js" defer="defer"></script>
+    <script src="js/views/debouche-component.js" defer="defer"></script>
+    <script src="js/views/evenement-component.js" defer="defer"></script>
+    <script src="js/views/information-component.js" defer="defer"></script>
+    <script src="js/views/Chart.min.js" defer="defer"></script>
+    <script src="js/views/stage-component.js" defer="defer"></script>
+    <script src="js/views/actualite-component.js" defer="defer"></script>
+    <script src="js/views/select-component.js" defer="defer"></script>
+    <script src="js/main.js" defer="defer"></script>
+</head>
+
+<body>
+    <script src="js/views/loading-component.js"></script>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="header container sticky">
+            <div class="nav-bar">
+
+                <!-- Logo -->
+                <div class="brand">
+                    <a id="header-logo" data-target="accueil" title="Accueil">
+                        <img src="images/logo-mql-cropped.png" alt="Accueil" id="index-span" />
+                        <div class="logo-title-wrapper">
+                            <span class="logo-title">MASTER QUALITÉ LOGICIEL</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Navbar  -->
+                <nav id="navbar" class="nav-list">
+                    <div class="hamburger">
+                        <img src="images/iconmonstr-menu-1-32-white.png">
+                    </div>
+                    <ul>
+                        <!-- Added dynamically -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="main">
+
+        <!-- Accueil -->
+        <div id="accueil">
+            <div class="image-content">
+                <section class="banner_image">
+                    <div class="banner-container">
+                        <h3>Master MQL</h3>
+                        <h1>Première passerelle d’Insertion Professionnelle en Informatique au Maroc
+                        </h1>
+                    </div>
+                    <div id="slide">
+                        <div id="slide-wrapper" class="slideshow-container">
+                            <!-- Slides are added dynamically -->
+                        </div>
+                    </div>
+                </section>
+            </div>
+           
+     
+
+</body>
+
+</html>
